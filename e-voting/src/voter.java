@@ -23,8 +23,16 @@ public class voter {
 	
 //	Purpose:logs the user in uses approve login
 //	Preconditions: use login information for the voter
-//	Postconditions: use is logged in
-	public void login(){
+//	Postconditions: user is logged in
+	public static void login(String login){
+		
+	}
+	
+//  Purpose: this is the password that should match with voter.login()
+//  Preconditions: 	user must not be logged in
+//  Postconditions: voteHandler must check to see if login() and password() correlate	
+	public static void password(String pw){
+		
 		
 	}
 //	Purpose:select a candidate 
@@ -39,6 +47,13 @@ public class voter {
 //	Postconditions: votes are sent to the voter handler once confirmed
 	public void castVote(){
 		
+	}
+	
+//Purpose: let voteHandler know when to print the voteticket
+//Preconditions: must be done casting votes.
+//Postconditions: Must be logged out of voting system.	
+	public static boolean isDoneVoting(){
+		return false;
 	}
 	
 }

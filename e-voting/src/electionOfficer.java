@@ -1,23 +1,12 @@
 
 public class electionOfficer {
 //	voter ID contains the ID of an election officer as an int.
-	private int officerID = 000000000;
+	private int officer_ID;
 //	vovterName contains the full name of the officer
-	public String officerName = "";
+	public String officerName;
 // contains the password of the officer
-	public String officerPassword = " ";
+	public String offcierPassword;
 	
-	public electionOfficer(){
-		
-	}
-	
-	public electionOfficer( int offID, String offName, String offPass){
-		
-		setOfficerID(offID);
-		officerName = offName;
-		officerPassword = offPass;
-		
-	}
 	
 //	Purpose:logs the user in uses approve login
 //	Preconditions: use login information for the voter
@@ -34,29 +23,5 @@ public class electionOfficer {
 //	Purpose:printns out current results 
 //	Preconditions: takes in a String array of the results 
 //	Postconditions: prints out the results 
-	public void printResults(String[] results){}
-
-	public int getID() {
-		return officerID;
-	}
-
-	public void setOfficerID(int officerID) {
-		this.officerID = officerID;
-	} 
-	
-	public String getName(){
-		return officerName;
-	}
-	
-	public void setName(String name){
-		this.officerName = name;
-	}
-	
-	public void setPass(String pass){
-		this.officerPassword = pass;
-	}
-	
-	public String getPass(){
-		return officerPassword;
-	}
+	public void printResults(String[] results){} 
 }
